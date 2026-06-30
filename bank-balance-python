@@ -44,17 +44,4 @@ while True:
         break
     else:
         print("Invalid choice")
-              # Bank Balance Python Project
-
-A simple Python command-line banking program.
-
-## Features
-- Check balance
-- Deposit money
-- Withdraw money
-- Quit the program
-- Handles invalid number inputs
-
-## How to Run
-```bash
-python main.py
+            
