@@ -1,0 +1,42 @@
+contacts = {}
+
+while True:
+    print('1. Add Contact')
+    print('2. View Contacts')
+    print('3. Search Contact')
+    print('4. Delete Contact')
+    print('5. Quit')
+
+    choice = input('Whats your choice: ')
+
+    if choice == "1":
+        name = input('Name: ')
+        number = input('Number: ')
+        contacts[name] = number
+
+    elif choice == "2":
+        for name, number in contacts.items():
+            print(name, ":", number)
+
+    elif choice == "3":
+        name = input('Enter a name: ')
+
+        if name in contacts:
+            print(contacts[name])
+        else:
+            print("Not found")
+
+    elif choice == "4":
+        name = input("Enter a name: ")
+
+        if name in contacts:
+            del contacts[name]
+            print("Deleted")
+        else:
+            print("Not Found")
+
+    elif choice == "5":
+        break
+
+    else:
+        print("Invalid choice")
